@@ -2,99 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
     <div class="wrapper">
-        <header></header>
-        <section title="offer">
-            <div class="contact">
-                <h1 class="contact__title">Supreme Rocket Maintenance</h1>
-                <p class="contact__offer">Your rocket is your $1,000,000,000 baby. We get that.</p>
-                <button class="contact__btn _btn">Contact Us</button>
+        <header class="Header">
+            <a class="Header__logo">
+                <div class="Logo__img"></div>
+                <p class="Header__title">Rocketman</p>
+            </a>
+            <nav class="Header__navigation">
+                <a href="" class="Header__link">SERVICES</a>
+                <a href="" class="Header__link">CONTACTS</a>
+                <a href="" class="Header__link">WAGTAIL COURSE</a>
+            </nav>
+        </header>
+        <section title="Offer" class="Offer">
+            <div class="Contact">
+                <h1 class="Contact__title">Supreme Rocket Maintenance</h1>
+                <p class="Contact__offer">Your rocket is your $1,000,000,000 baby. We get that.</p>
+                <button class="Contact__btn _btn">Contact Us</button>
             </div>
         </section>
-        <section title="Articles">
+        <section title="Article" class="Article">
             <h2 class="Article__header">Your rocket is valuable. Let the professionals work on it.</h2>
             <div class="Article__box">
                 <div class="Article__item">
+                    <img src="./img/lego-rocket.jpg" alt="lego rocketman" class="Article__img">
                     <h3 class="Article__title">It's not a toy</h3>
                     <p class="Article__contentpre">Or maybe you're Jeff Bezos.. and rockets are your toys!</p>
-                    <button class="Article__submitbtn">View Services</button>
+                    <button class="Article__submitbtn _btn">View Services ></button>
                 </div>
                 <div class="Article__item">
+                    <img src="./img/rocketatnight.jpg" alt="lego rocketman" class="Article__img">
                     <h3 class="Article__title">Rockets are cool!</h3>
                     <p class="Article__contentpre">Especially when you see photos like this one 🤤</p>
-                    <button class="Article__submitbtn">Contact Us</button>
+                    <button class="Article__submitbtn _btn">Contact Us ></button>
                 </div>
             </div>
         </section>
-        <section title="Advantages">
+        <section title="Advantages" class="Advantages">
             <div class="Advantages__item">
-                <div class="Advantages__img"></div>
+                <img src="./img/manyrocketlaunch.jpg" class="Advantages__img"></img>
                 <div class="Advantages__box">
-                    <h3 class="Advantages__header">Self Landing Rocket</h3>
-                    <p class="Advantages__text">Probably the coolest thing evar!!1 We can program this for you.</p>
-                    <button class="Advantages__more _btn">more details</button>
+                    <h3 class="Advantages__header _textbox">Self Landing Rocket</h3>
+                    <p class="Advantages__text _textbox">Probably the coolest thing evar!!1 We can program this for you.</p>
+                    <button class="Advantages__more _btn _textbox">more details</button>
+                </div>
+            </div>
+            <div class="Advantages__item _left">
+                <img src="./img/rocketclose.jpg" class="Advantages__img"></img>
+                <div class="Advantages__box textbox-left">
+                    <h3 class="Advantages__header _textbox">We'll clean your rocket</h3>
+                    <p class="Advantages__text _textbox ">This image has nothing to do with cleaning. But it's kind of neat still.</p>
+                    <button class="Advantages__more _btn _textbox">more details</button>
                 </div>
             </div>
             <div class="Advantages__item">
-                <div class="Advantages__img"></div>
+                <img src="./img/rocketlaunchsingl.jpg" class="Advantages__img"></img>
                 <div class="Advantages__box">
-                    <h3 class="Advantages__header">We'll clean your rocket</h3>
-                    <p class="Advantages__text">This image has nothing to do with cleaning. But it's kind of neat still.</p>
-                    <button class="Advantages__more _btn">more details</button>
+                    <h3 class="Advantages__header _textbox">Rockets are gas guzzlers</h3>
+                    <p class="Advantages__text _textbox">If you think gas is expensive now.. think about rocket prices! Luckily, we water our gas down to give you more bang for your buck.</p>
+                    <button class="Advantages__more _btn _textbox">more details</button>
                 </div>
             </div>
-            <div class="Advantages__item">
-                <div class="Advantages__img"></div>
-                <div class="Advantages__box">
-                    <h3 class="Advantages__header">Rockets are gas guzzlers</h3>
-                    <p class="Advantages__text">If you think gas is expensive now.. think about rocket prices! Luckily, we water our gas down to give you more bang for your buck.</p>
-                    <button class="Advantages__more _btn">more details</button>
-                </div>
-            </div>
-            <div class="Advantages__contacts">
+            <div class="Advantages__footer">
                 <h3 class="Advantages__footer">We've also partnered with Skynet to maintain humanoid robotics.</h3>
-                <button class="Contact">Contact Us</button>
+                <button class="Advantages__contact _btn">Contact Us</button>
             </div>
             <div class="Quote">
                 <h3 class="Quote__title">Our rockets were so clean they blinded over 1,000 people when they watched our launch. Thanks Rocketman!</h3>
                 <p class="Quote__signature">— TOTALLY NOT SPACEX 😉</p>
             </div>
         </section>
-        <section title="ContactBottom">
-            <div class="ContactBottom__content">
+        <section title="ContactBottom" class="ContactBottom">
+            <div class="ContactBottom__box">
+            <div class="ContactBottom__text">
                 <h3 class="ContactBottom__header">We’ll take good care of your rocket.</h3>
-                <p class="ContactBottom__text">We’ll treat your rocket as if it’s our own. Our standards are higher than the ISS's altitude. We also enjoy test driving your rocket before giving it back 😱</p>
+                <p class="ContactBottom__text">We’ll treat your rocket as if it’s our own. Our standards are higher than the ISS's altitude. We also enjoy test driving your rocket before giving it back <br>😱</p>
             </div>
+            <button class="ContactBottom__btn _btn">Contact Us</button>
+        </div>
         </section>
-        <footer title="Footer">
+        <footer title="Footer" class="Footer">
             <div class="Footer__box">
-                <ul class="Footer__list">
-                    <li class="list__header">LINKS</li>
-                    <li class="list__item">Services</li>
-                    <li class="list__item">Contact</li>
-                    <li class="list__item">Wagtail Course</li>
-                </ul>
-                <ul class="Footer__list">
-                    <li class="list__header">CONTACT US</li>
-                    <li class="list__item">Contact us anytime at<dr></dr>
-                        gary@totallyfakeemail.com</li>
-                    <li class="list__item">* All images from unsplash.com</li>
-                </ul>
-                <ul class="Footer__list">
-                    <li class="list__header">HOURS</li>
-                    <li class="list__item">Monday - Friday</li>
-                    <li class="list__item">9am - 5pm</li>
-                </ul>
-                <ul class="Footer__list">
-                    <li class="list__item">
-                        <div class="media__icon"></div>
-                        <div class="media__icon"></div>
-                    </li>
-                    <li class="date">© 2023 Rocketman</li>
+                <div class="Footer__list">
+                    <p class="list__header">LINKS</p>
+                    <a href="" class="list__item">Services</a>
+                    <a href="" class="list__item">Contact</a>
+                    <a href="" class="list__item">Wagtail Course</a>
+                </div>
+                <div class="Footer__list">
+                    <p href="" class="list__header">CONTACT US</p>
+                    <a href="" class="list__item">Contact us anytime at<br>
+                        gary@totallyfakeemail.com</a>
+                    <a href="" class="list__item">* All images from unsplash.com</a>
+                </div>
+                <div class="Footer__list">
+                    <p href="" class="list__header">HOURS</p>
+                    <a href="" class="list__item">Monday - Friday</a>
+                    <a href="" class="list__item">9am - 5pm</a>
+                </div>
+                <div class="Footer__list">
+                    <div class="list__item _mediaicons">
+                        <a href="" class="media__icon"><img src="./img/logo-twitter.png" alt="" class="media__iconimg"></a>
+                        <a href="" class="media__icon"><img src="./img/youtube-logo.png" alt="" class="media__iconimg"></a>
+                    </div>
+                    <p class="date">© 2023 Rocketman</p>
                 </ul>
             </div>
         </footer>

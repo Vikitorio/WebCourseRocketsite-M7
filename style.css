@@ -1,0 +1,252 @@
+*{
+   box-sizing: border-box;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #814ebf;
+    --purple: #814ebf;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #814ebf;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #000;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: transparent;
+}
+a:hover{
+    color: transparent;
+}
+html{
+    font-family: sans-serif;
+}
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+/*Header-----------------------------------*/
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.Header__logo{
+    margin-right: 60px;
+    display: flex;
+    color: var(--dark);
+}
+.Logo__img{
+    width: 64px;
+    height: 64px;
+    background-image: url("./img/main-logo.png");
+    background-size: contain;
+
+}
+.Header__navigation{
+    margin-left: 140px;
+    display: flex;
+    align-items: center;
+
+}
+.Header__navigation a{
+    padding: 10px 60px 10px 60px;
+    color: var(--dark);
+}
+
+/*BTN-----------------------------------*/
+._btn{
+    border:none;
+    background-color: var(--light);
+    height:65px
+}
+/*Offer-----------------------------------*/
+.Offer{
+    height: 740px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("./img/rocketlaunchsingl.jpg");
+    background-size: cover;
+
+    color: var(--light);
+  
+}
+.Contact{
+    width: 1200px;
+    position: relative;
+
+}
+.Contact__title{
+}
+.Contact__offer{
+    padding-top: 30px;
+    
+}
+.Contact__btn{
+    margin-top: 65px;
+    padding: 10px 60px;
+}
+/*Article-----------------------------------*/
+.Article{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Article__item{
+    border: solid rgba(0,0,0,0.1) 1px;
+}
+.Article__img{
+    width: 561px;
+    height: 364px;
+}
+.Article__header{
+    padding-top: 115px;
+    width: 100%;
+    text-align: center;
+}
+.Article__box{
+    display: flex;
+    justify-content:space-between;
+    width: 1200px;
+    padding-top: 115px;
+    text-align: center;
+
+}
+.Article__submitbtn{
+    background-color: transparent;
+    color: var(--primary);
+}
+/*Adwantages-----------------------------------*/
+.Advantages{
+    max-width: 1200px;
+    margin: 130px auto 0 auto;
+}
+.Advantages__item{
+    margin-top: 90px;
+position: relative;
+
+height: 631px;
+}
+.Advantages__img{
+    width: 758px;
+    height: 532px;
+    position: absolute;
+    object-fit: cover;
+}
+.Advantages__box{
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    right: 100px;
+    padding: 50px;
+    background-color: #000;
+    color: var(--light);
+    
+
+}
+.Advantages__item._left{
+    margin-left: auto;
+}
+.Advantages__item._left .Advantages__img{
+    right: 0;
+}
+._textbox{
+    max-width: 389px;
+}
+.textbox-left{
+    left: 100px;
+    right: auto;
+}
+.Advantages__more._btn{
+    padding: 10px 60px;
+}
+.Advantages__contact._btn{
+   padding: 10px 60px;
+   background-color: var(--indigo);
+   color: var(--light);
+}
+.Advantages__footer{
+    text-align: center;
+    margin-top: 90px;
+}
+.Quote{
+    max-width: 765px;
+    margin: 0 auto;
+    padding: 90px 0 0 0;
+    text-align: center;
+}
+/*ContactBottom-----------------------------------*/
+.ContactBottom{
+    padding: 90px 0;
+    background-color: var(--indigo);
+}
+.ContactBottom__box{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ContactBottom__text{
+    max-width: 800px;
+    color: var(--light);
+}
+.ContactBottom__btn{
+    padding: 10px 40px;
+}
+/*Footer-----------------------------------*/
+.Footer{
+padding: 90px 0;
+background-color: var(--dark);
+color: var(--gray);
+}
+.list__item{
+    color: var(--light);
+}
+.list__item._mediaicons{
+    display: flex;
+}
+.Footer__box{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.list__header{
+    margin: 0;
+    padding-bottom: 20px;
+}
+.media__iconimg{
+    width: 18px;
+    height: 15px;
+    margin-right: 10px;
+    object-fit: cover;
+    filter: invert(1);
+}
