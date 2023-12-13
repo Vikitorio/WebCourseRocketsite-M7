@@ -37,13 +37,16 @@ a{
     color: transparent;
 }
 a:hover{
-    color: transparent;
+    color: none;
 }
 html{
     font-family: sans-serif;
 }
 body{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+button{
+    display: block;
 }
 /*Header-----------------------------------*/
 .Header{
@@ -55,7 +58,7 @@ body{
     margin: 0 auto;
 }
 .Header__logo{
-    margin-right: 60px;
+    margin-right: 20px;
     display: flex;
     color: var(--dark);
 }
@@ -67,16 +70,32 @@ body{
 
 }
 .Header__navigation{
-    margin-left: 140px;
+    max-width: 700px;
     display: flex;
+    flex-grow: 1;
     align-items: center;
+    justify-content: space-between;
 
 }
 .Header__navigation a{
-    padding: 10px 60px 10px 60px;
+    padding: 10px;
     color: var(--dark);
 }
-
+@media  (max-width:993px) {
+    .Header__logo{
+        flex-grow: 1;
+    }
+    
+}
+@media  (max-width:580px) {
+    .Header__navigation{
+        flex-wrap: wrap;
+    }
+    .Header{
+        
+        flex-wrap: wrap;
+    }
+}
 /*BTN-----------------------------------*/
 ._btn{
     border:none;
@@ -86,9 +105,9 @@ body{
 /*Offer-----------------------------------*/
 .Offer{
     height: 740px;
+  
     display: flex;
     align-items: center;
-    justify-content: center;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url("./img/rocketlaunchsingl.jpg");
     background-size: cover;
@@ -96,34 +115,69 @@ body{
     color: var(--light);
   
 }
-.Contact{
+.Offer__box{
     width: 1200px;
+    margin: 0 auto;
+}
+.Contact{
+    max-width: 765px;
     position: relative;
+    font-size: 25px;
+
 
 }
 .Contact__title{
+    font-size: 65px;
+    margin: 0;
 }
 .Contact__offer{
-    padding-top: 30px;
     
 }
 .Contact__btn{
-    margin-top: 65px;
+    margin-top: 48px;
     padding: 10px 60px;
+}
+@media  (max-width:1200px) {
+    .Contact{
+       left: 20px;
+    
+    
+    }
+    
+}
+@media  (max-width:770px) {
+    .Contact{
+       left: 20px;
+    } 
+}
+@media  (max-width:580px) {
+    .Contact{
+       left: 20px;
+       font-size: 20px;
+    }
+    .Contact__title{
+        font-size: 40px;
+    }
+    
 }
 /*Article-----------------------------------*/
 .Article{
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .Article__item{
     border: solid rgba(0,0,0,0.1) 1px;
+    width: 47%;
+
 }
 .Article__img{
-    width: 561px;
-    height: 364px;
+    /*width: 561px;*/
+    /*height: 364px;*/
+    width: 100%;
+    max-height: auto;
+
+
 }
 .Article__header{
     padding-top: 115px;
@@ -136,11 +190,31 @@ body{
     width: 1200px;
     padding-top: 115px;
     text-align: center;
+    flex-wrap: wrap;
 
 }
 .Article__submitbtn{
     background-color: transparent;
     color: var(--primary);
+    margin: 0 auto;
+}
+@media  (max-width:800px) {
+    .Article__item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
+@media  (max-width:1200px) {
+
+    
+}
+@media  (max-width:770px) {
+
+    
+}
+@media  (max-width:580px) {
+    
 }
 /*Adwantages-----------------------------------*/
 .Advantages{
@@ -150,11 +224,11 @@ body{
 .Advantages__item{
     margin-top: 90px;
 position: relative;
-
+max-width: 1200px;
 height: 631px;
 }
 .Advantages__img{
-    width: 758px;
+        width: 758px;
     height: 532px;
     position: absolute;
     object-fit: cover;
@@ -190,6 +264,7 @@ height: 631px;
    padding: 10px 60px;
    background-color: var(--indigo);
    color: var(--light);
+   margin: 0 auto;
 }
 .Advantages__footer{
     text-align: center;
@@ -200,6 +275,30 @@ height: 631px;
     margin: 0 auto;
     padding: 90px 0 0 0;
     text-align: center;
+}
+@media  (max-width:1200px) {
+
+}
+@media  (max-width:990px) {
+    .Advantages__header{
+        text-align: center;
+    }
+    .Advantages__more{
+        margin: 0 auto;
+    }
+  
+}
+@media  (max-width:580px) {
+    .Advantages__box{
+        left: 50px;
+        right: auto;
+
+    }
+    .textbox-left{
+        left: 50px;
+        right: auto;
+    }
+    
 }
 /*ContactBottom-----------------------------------*/
 .ContactBottom{
@@ -221,6 +320,27 @@ height: 631px;
 .ContactBottom__btn{
     padding: 10px 40px;
 }
+@media  (max-width:1215px) {
+    .ContactBottom{
+        padding: 90px 15px;
+    }
+    .ContactBottom__text{
+        margin-right: 15px;
+    }
+}
+@media  (max-width:570px) {
+    .ContactBottom__box{
+        flex-wrap: wrap;
+        
+    }
+    .ContactBottom__text{
+        margin: 0 auto 15px auto;
+        text-align: center;
+    }
+    .ContactBottom__btn{
+        margin: 0 auto;
+    }
+}
 /*Footer-----------------------------------*/
 .Footer{
 padding: 90px 0;
@@ -229,6 +349,13 @@ color: var(--gray);
 }
 .list__item{
     color: var(--light);
+}
+.Footer__list{
+    min-width: 260px;
+    margin: 15px 0 15px 15px;
+}
+.Footer__list:not(:last-child){
+    margin-right:15px;
 }
 .list__item._mediaicons{
     display: flex;
@@ -249,4 +376,18 @@ color: var(--gray);
     margin-right: 10px;
     object-fit: cover;
     filter: invert(1);
+}
+@media  (max-width:1100px) {
+    .Footer__box{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media  (max-width:600px) {
+    .Footer__list{
+        padding: 0 auto;
+    }
+    .list__item{
+
+    }
 }
